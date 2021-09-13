@@ -1,0 +1,105 @@
+@import url ('https://fonts.googleapis.com/css2? family = Poppins: wght @ 300; 500; 700 & display = swap');
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+h1,h2,a,p,button{
+    font-family: Poppins;
+}
+
+body {
+    background-image: url(https://images.alphacoders.com/510/thumb-1920-510026.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+header{
+    position: center;
+    top: 0;
+    background-color: rgb(14, 65, 4);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 10px;
+    margin-top: ;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bola {
+    width: 10px;
+    animation: fantasma 3s infinite;
+    animation: walk 3s infinite;
+    margin-top: 0;
+
+}
+
+@keyframes fantasma {
+    0% { opacity: 0% } 
+    25% { transform: translateY(-20px); opacity: 100% }
+    100% { opacity: 0% }
+}
+
+@keyframes walk {
+0% { transform: translateX(-50px);
+    opacity: 0%;
+}
+
+50% { transform: translateX (50px);
+    opacity: 700%;
+}
+
+100% { transform: translateX(1500px);
+    opacity: 100%;
+}
+}
+
+.cr7 {
+    scale: (2, 3);
+    align-items: center;
+    justify-content: center;
+    animation: spin 2s linear infinite;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(2);
+    }
+}
+
+.button {
+    font-size: 18px;
+    color: #fff;
+    padding: 0 70px;
+    height: 42px;
+    margin: 20px;
+    border-radius: 21px;
+    background: #b40320;
+  }
+
+  .button:hover {
+      cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 70px;
+    height: 42px;
+    margin: 20px;
+    border-radius: 21px;
+    background: hsl(197, 83%, 48%);
+    transition: 2s;
+  }
